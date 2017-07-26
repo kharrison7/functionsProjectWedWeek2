@@ -70,32 +70,45 @@ console.log(sum(2, 3));
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
 // Then, write and example of using the function.
+function avg(num1, num2, num3){
+  let sum = num1 + num2 + num3;
+  return sum;
+}
 
-
-
+console.log(avg(1, 2, 3));
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
+function getLength(words){
+  return words.length;
+}
 
-
-
+console.log(getLength("Hello"));
 // 7.
 // Write a function called `greaterThan` that takes two parameters
 // and returns `true` if the second parameter is greater than the first.
 // Otherwise the function should return `false`.
 // Then, write and example of using the function.
+function greaterThan(num1, num2){
+  if(num2 > num1){
+    return true;
+  }
+  return false;
+}
 
-
-
+console.log(greaterThan(1,4));
 // 8.
 // Write a function called `greet` that takes a
 // single parameter and returns a string that
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 // Then, write and example of using the function.
+function greet(name){
+  let phrase = "Hello " + name + "!";
+  return phrase;
+}
 
-
-
+console.log(greet("Bob"));
 // 9.
 // Write a function called `madlib` that takes 4 or more parameters (words).
 // The function should insert the words into a pre-defined sentence.
@@ -104,3 +117,11 @@ console.log(sum(2, 3));
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // Then, write and example of using the function.
+function madLib(word1, word2, word3, word4){
+  let phrase = "The " + word1 +" "+ word2 + " went by the " +word3+ " very " +word4+ " earlier today."
+  return phrase;
+}
+
+
+
+console.log(madLib('old', 'man', 'market', 'hurriedly'));
